@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nurse Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f9, #e1ecf7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #0077b6;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-role {
+      font-size: 1rem;
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    .profile-details {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 8px 0;
+      word-wrap: break-word;
+    }
+
+    .skills {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .skill {
+      background: #e7f1fb;
+      color: #0077b6;
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #0096c7, #00b4d8);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nurse" class="profile-img">
+    <div class="profile-name">Jane Doe</div>
+    <div class="profile-role">Registered Nurse | Nairobi Hospital</div>
+
+    <div class="profile-details">📞 +254 712 345 678</div>
+    <div class="profile-details">✉️ jane.doe@nairobi-hospital.org</div>
+
+    <div class="skills">
+      <span class="skill">Pediatrics</span>
+      <span class="skill">Emergency Care</span>
+      <span class="skill">Patient Counseling</span>
+      <span class="skill">IV Therapy</span>
+    </div>
+
+    <a href="mailto:jane.doe@nairobi-hospital.org" class="btn">Book Appointment</a>
+  </div>
+</body>
+</html>
